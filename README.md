@@ -1,6 +1,7 @@
 🔰GESTOR-SSH🔰
 
-🔹️PAINELWEB DO Anubis, SÓ QUE GRATIS JKKK
+🔹️PAINELWEB AlanSSH Free!
+      feat: @scottssh
 
 
 ⬇️ Instalador
@@ -10,7 +11,7 @@ bash <(wget -qO- https://raw.githubusercontent.com/ScottBrabo/aNoobisPweb/main/r
 
 🔑 Key Ilimitada
 ```
-@scottssh
+alanssh
 ```
 
 🔄 Sincronizador

@@ -138,7 +138,7 @@ cat /dev/null > ~/.bash_history && history -c
 rm /bin/ubuinst* > /dev/null 2>&1
 exit;
 else
-  echo -e 'by: @scottssh' >/usr/lib/telegram
+  echo -e 'by: alanssh' >/usr/lib/telegram
   msg -bar
   echo -e "\e[1;97m           \e[5m\033[1;100m   ATUALIZAÇÃO DO SISTEMA   \033[1;37m"
   msg -bar
@@ -329,8 +329,8 @@ dpkg-reconfigure --frontend noninteractive tzdata > /dev/null 2>&1
 clear
 echo -e "\E[44;1;37m    INSTALANDO PAINEL    \E[0m"
 echo ""
-echo -e "WEB GESTOR-SSH" | figlet
-echo -e "                              \033[1;31mBy @scottssh\033[1;36m"
+figlet "ALAN-PWEB" | lolcat
+echo -e "                              \033[1;31mFt: @scottssh\033[1;36m"
 echo ""
 chave=$(curl -sSL "https://raw.githubusercontent.com/ScottBrabo/aNoobisPweb/main/raw/painel/install/chave") &>/dev/null
 
@@ -372,8 +372,8 @@ install_continue2
 	sed -i "s/#PasswordAuthentication no/PasswordAuthentication yes/g" /etc/ssh/sshd_config
 } > /dev/null
 echo ""
-echo -e "WEB GESTOR-SSH" | figlet
-echo -e "                              \033[1;31mBy @scottssh\033[1;36m"
+figlet "ALAN-PWEB" | lolcat
+echo -e "                              \033[1;31mFt: @scottssh\033[1;36m"
 echo ""
 echo -e "\033[1;36mDEFINA UMA NOVA SENHA PARA\033[0m"
 echo -e "\033[1;36mO USUÁRIO ROOT DA VPS E\033[0m"
@@ -394,20 +394,22 @@ tst_bkp
 clear
 sed -i "s;upload_max_filesize = 2M;upload_max_filesize = 256M;g" /etc/php/8.1/apache2/php.ini > /dev/null 2>&1
 sed -i "s;post_max_size = 8M;post_max_size = 256M;g" /etc/php/8.1/apache2/php.ini > /dev/null 2>&1
-echo -e "PAINELWEB GESTOR-SSH" | figlet
-echo -e "                              \033[1;31mBy @scottssh\033[1;36m"
+figlet "ALAN-PWEB" | lolcat
+echo -e "                              \033[1;31mFt: @scottssh\033[1;36m"
 echo ""
 echo -e "\033[1;32mPAINEL INSTALADO COM SUCESSO!"
 echo ""
-echo -e "\033[1;36m SEU PAINEL:\033[1;37m http://$IP/admin\033[0m"
-echo -e "\033[1;36m USUÁRIO:\033[1;37m admin\033[0m"
-echo -e "\033[1;36m SENHA:\033[1;37m admin\033[0m"
+echo -e "------------------------------------------------------" | lolcat
+echo -e "\033[1;36m 🚀SEU PAINEL:\033[1;37m http://$IP/admin\033[0m"
+echo -e "\033[1;36m 👤USUÁRIO:\033[1;37m admin\033[0m"
+echo -e "\033[1;36m 🔑SENHA:\033[1;37m admin\033[0m"
 echo ""
-echo -e "\033[1;36m LOJA DE APPS:\033[1;37m http://$IP/apps\033[0m"
+echo -e "\033[1;36m ⬇️LOJA DE APPS:\033[1;37m http://$IP/apps\033[0m"
 echo ""
-echo -e "\033[1;36m PHPMYADMIN:\033[1;37m http://$IP/phpmyadmin\033[0m"
-echo -e "\033[1;36m USUÁRIO:\033[1;37m root\033[0m"
-echo -e "\033[1;36m SENHA:\033[1;37m $pwdroot\033[0m"
+echo -e "\033[1;36m 💼PHPMYADMIN:\033[1;37m http://$IP/phpmyadmin\033[0m"
+echo -e "\033[1;36m 👤USUÁRIO:\033[1;37m root\033[0m"
+echo -e "\033[1;36m 🔑SENHA:\033[1;37m $pwdroot\033[0m"
+echo -e "------------------------------------------------------" | lolcat
 echo ""
 echo -e "\033[1;31m \033[1;33mCOMANDO PRINCIPAL: \033[1;32mpweb\033[0m"
 echo -e "\033[1;33m MAIS INFORMAÇÕES \033[1;31m(\033[1;36mTELEGRAM\033[1;31m): \033[1;37m@scottssh\033[0m"
