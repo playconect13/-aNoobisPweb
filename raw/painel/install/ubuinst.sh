@@ -3,6 +3,7 @@
 # SCRIPT SSH-PLUS
 # CANAL TELEGRAM: @asempreendimentos013
 #--------------------------
+clear
 apt-get install lolcat -y &>/dev/null
 apt-get install figlet -y &>/dev/null
 apt-get install curl -y &>/dev/null
